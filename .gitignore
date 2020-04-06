@@ -1,0 +1,14 @@
+.DS_Store
+FauxPasConfig
+build
+Build
+Products
+*.pbxuser
+*.perspectivev3
+*.mode1v3
+xcuserdata
+xcuserdata
+xcshareddata
+.idea
+
+XueBaTest_Salo
