@@ -8,5 +8,10 @@
         <page name='05_enumerations'/>
         <page name='06_class&amp;Struct'/>
         <page name='07_properties'/>
+        <page name='08_methods'/>
+        <page name='09_subscripts'/>
+        <page name='10_inheritance'/>
+        <page name='11_initialization'/>
+        <page name='12_optionalChaining'/>
     </pages>
 </playground>
