@@ -14,5 +14,9 @@
         <page name='11_initialization'/>
         <page name='12_optionalChaining'/>
         <page name='13_errorHandling'/>
+        <page name='14_typeCasting'/>
+        <page name='15_nestedTypes'/>
+        <page name='16_extensions'/>
+        <page name='17_protocols'/>
     </pages>
 </playground>
