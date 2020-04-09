@@ -18,5 +18,6 @@
         <page name='15_nestedTypes'/>
         <page name='16_extensions'/>
         <page name='17_protocols'/>
+        <page name='18_generics'/>
     </pages>
 </playground>

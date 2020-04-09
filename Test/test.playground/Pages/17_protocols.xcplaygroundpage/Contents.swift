@@ -108,7 +108,7 @@ class Dice {
 }
 
 var d6 = Dice(sides: 6, generator: LinearCongruentialGenerator())
-for _ in 1...15 {
+for _ in 1...6 {
     print("Random dice roll is \(d6.roll())")
 }
 
@@ -127,7 +127,7 @@ protocol DiceGameDelegate {
 class SnakesAndLadders: DiceGame {
     let finalSquare = 25
     let dice = Dice(sides: 6, generator: LinearCongruentialGenerator())
-    var square = 0?
+    var square = 0
     var board: [Int]
     init() {
         board = Array(repeating: 0, count: finalSquare + 1)
@@ -151,8 +151,8 @@ class SnakesAndLadders: DiceGame {
                 square += board[square]
             }
         }
+        delegate?.gameDidEnd(self)
     }
-    delegate?.gameDidEnd(self)
 }
 
 class DiceGameTracker: DiceGameDelegate {
@@ -178,7 +178,10 @@ class DiceGameTracker: DiceGameDelegate {
 let traker = DiceGameTracker()
 let game = SnakesAndLadders()
 game.delegate = traker
-game.play
+game.play()
 
 
-//: [Next](@next)
+
+
+
+//: [18.泛型](18_generics)
